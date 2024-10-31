@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.iconscout.com/icon/free/png-512/free-leetcode-3521542-2944960.png?f=avif&w=256">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo" onclick=location.href="#">
+      <img src="./assets/namelogo.svg" alt="Logo" class="logo-image">
+      <span class="designer-name">Teja</span>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo" onclick=location.href="#">
+      <img src="./assets/namelogo.svg" alt="Logo" class="logo-image">
+      <span class="designer-name">Teja</span>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div data-aos="fade-right" data-aos-delay="500" class="section_pic-container">
+      <img src="./assets/undraw_feeling_proud_qne1.svg" alt="Profile Pic" />
+    </div>
+    <div class="section_text">
+      <p data-aos="fade-down" class="section_text_p1">Hello, I'm</p>
+      <h1 data-aos="fade-down" data-aos-delay="100" class="fullname">Hima Teja Raju Sangaraju</h1>
+      <p data-aos="fade-down" data-aos-delay="200" class="section_text_p2">
+        <span class="dynamic-text"></span><span class="cursor">&nbsp;</span>
+      </p>
+
+      <div data-aos="fade-down" data-aos-delay="300" class="btn_container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Teja_Resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'""
+        >
+          Contact Me
+        </button>
+      </div>
+      <div data-aos=" fade-left" data-aos-delay="400" id="socials-container">
+          <img src="./assets/linkedin.png" alt="My linkedIn Profile" class="icon"
+            onclick="location.href='https://www.linkedIn.com/in/teja-raju'" />
+          <img src="./assets/github.png" alt="My GitHub Profile" class="icon"
+            onclick="location.href='https://www.github.com/Tejaraju0'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section_text_p1" data-aos="fade-down">Get To Know More</p>
+    <h1 class="title" data-aos="fade-down">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="text-container">
+          <p class="intro" data-aos="fade-down" data-aos-delay="200">Hey! I'm <span class="name"><b>Hima Teja Raju
+                Sangaraju</b></span> a recent B.Tech graduate
+            in Computer Science and Engineering, and I’m really into building cool
+            stuff with code. As a software developer, I focus on web development and solving problems, always aiming to
+            keep things simple and efficient. I’m organized, enjoy working with teams, and tackle challenges with
+            dedication. I love taking on new projects and learning along the way. Let’s create something awesome
+            together!
+          </p>
+          <div class="certification-badges-container">
+            <h3 data-aos="fade-down" data-aos-delay="300">Certifications & Badges</h3>
+            <div class="certifications">
+              <div class="cert-card" data-aos="fade-right" data-aos-delay="400">
+                <div class="tag cert-tag">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <img src="./assets/MERN-logo.png" alt="Certificate 1" />
+                <p>Mern Full Stack Development</p>
+                <span>Issued by IIDT</span>
+
+                <a href="./assets/FSD_Internship_Certificate.pdf" target="_blank" class="cert-link">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </a>
+              </div>
+              <div class="cert-card" data-aos="fade-right" data-aos-delay="400">
+                <div class="tag cert-tag">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <img src="./assets/data.png" alt="Certificate 2" />
+                <p>Data Science</p>
+                <span>Issued by 365 Careers</span>
+
+                <a href="./assets/UDEMY-Data_Science_Certificate .pdf" target="_blank" class="cert-link">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </a>
+              </div>
+              <div class="cert-card" data-aos="fade-right" data-aos-delay="400">
+                <div class="tag badge-tag">
+                  <i class="fas fa-medal"></i>
+                </div>
+                <img src="./assets/introduction-to-cybersecurity.png" alt="Badge 1" />
+                <p>Introduction to Cybersecurity</p>
+                <span>Issued by Cisco</span>
+
+                <a href="./assets/Introduction_to_Cybersecurity_Badge.pdf" target="_blank" class="cert-link">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience">
+    <p class="section_text_p1" data-aos="fade-down">Explore My</p>
+    <h1 class="title" data-aos="fade-down">Experience</h1>
+    <div class="timeline" data-aos="fade-right" data-aos-delay="200">
+
+      <div class="container left-container">
+        <img src="./assets/IIDT_Logo.png" alt="alphabet">
+        <div class="text-box">
+          <h3>Full Stack Development Intern</h3>
+          <small class="company">International Institute of Digital technologies</small>
+          <ul>
+            <li>Gained hands-on experience in backend development with Node.js and MongoDB, improving data handling.
+            </li>
+            <li>Developed responsive front-end interfaces using JavaScript and React, enhancing UI/UX.</li>
+            <li>Strengthened collaboration and problem-solving skills through real-world debugging in a virtual team.
+            </li>
+          </ul>
+          <small class="timespan">Jan 2024 - Apr 2024</small>
+          <span class="left-container-arrow"></span>
+        </div>
+      </div>
+
+      <div class="container right-container">
+        <img src="./assets/college_logo.png" alt="alphabet">
+        <div class="text-box">
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <small class="company">Audisankara Institute of Technology</small>
+          <ul>
+            <li>Built a solid foundation in software engineering, data structures, and algorithms for efficient
+              problem-solving.</li>
+            <li>Completed collaborative programming projects, enhancing teamwork and coding skills.</li>
+            <li>Developed skills in Python, Java, SQL, web development, and database management</li>
+          </ul>
+          <small class="timespan">Aug 2020 - Aug 2024</small>
+          <span class="right-container-arrow"></span>
+        </div>
+      </div>
+    </div>
+
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="skills" class="skills-section">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+
+    <div class="skills-container">
+      <div class="skill-item" data-skill="Python" data-aos="fade-up " data-aos-delay="200">
+        <img src="./assets/python.png" alt="python" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="Java" data-aos="fade-up" data-aos-delay="300">
+        <img src="./assets/java.png" alt="java" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="MySQL" data-aos="fade-up" data-aos-delay="400">
+        <img src="./assets/database.png" alt="sql" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="HTML" data-aos="fade-up" data-aos-delay="500">
+        <img src="./assets/html.png" alt="html" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="CSS" data-aos="fade-up" data-aos-delay="600">
+        <img src="./assets/social.png" alt="css" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="JavaScript" data-aos="fade-up" data-aos-delay="700">
+        <img src="./assets/js.png" alt="js" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="React.js" data-aos="fade-up" data-aos-delay="800">
+        <img src="./assets/React.png" alt="react" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="Node.js" data-aos="fade-up" data-aos-delay="900">
+        <img src="./assets/node.png" alt="node" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="MongoDB" data-aos="fade-up" data-aos-delay="1000">
+        <img src="./assets/MongoDB.png" alt="mongodb" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="Express.js" data-aos="fade-up" data-aos-delay="1100">
+        <img src="./assets/express.png" alt="express" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="Git" data-aos="fade-up" data-aos-delay="1200">
+        <img src="./assets/Git.png" alt="git" class="skill-logo" />
+      </div>
+      <div class="skill-item" data-skill="VSCode" data-aos="fade-up" data-aos-delay="1300">
+        <img src="./assets/VS Code.png" alt="vscode" class="skill-logo" />
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="projects">
+    <p class="section_text_p1" data-aos="fade-down">Browse My Recent</p>
+    <h1 class="title" data-aos="fade-down">Projects</h1>
+    <div class="project-box">
+      <div class="project-row"  data-aos="fade-right" data-aos-delay="200">
+        <div class="project-col">
+          <div class="project-img">
+            <img src="./assets/homePage.png" alt="">
+          </div>
+        </div>
+        <div class="project-col">
+          <div class="project-text">
+            <h4>Recipe Discovering and Sharing Platform</h4>
+            <p>A platform for discovering, sharing and saving recipes globally developed using MERN Stack, with
+              personalized search and favorite
+              recipes.</p>
+            <div class="tech-stack">
+              <span class="hashtag html">#HTML</span>
+              <span class="hashtag css">#CSS</span>
+              <span class="hashtag js">#JavaScript</span>
+              <span class="hashtag Reactjs">#React.js</span>
+              <span class="hashtag mongodb">#MongoDB</span>
+              <span class="hashtag nodejs">#Node.js</span>
+              <span class="hashtag expressjs">#Express.js</span>
+            </div>
+            <div class="colored-btn-box">
+              <a href="#" class="colored-btn">Live Demo</a>
+              <a href="https://github.com/Tejaraju0/FavourFeed--Recipe_app-MERN-Project-" class="colored-btn">GitHub Repo</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="project-row"  data-aos="fade-right" data-aos-delay="400">
+        <div class="project-col">
+          <div class="project-img">
+            <img src="./assets/portfolio_pic.png" alt="">
+          </div>
+        </div>
+        <div class="project-col ">
+          <div class="project-text">
+            <h4>Personal Portfolio</h4>
+            <p>A dynamic portfolio showcasing skills, projects, and experience with sleek animations, responsive design,
+              and easy navigation to highlight personal achievements.</p>
+            <div class="tech-stack">
+              <span class="hashtag html">#HTML</span>
+              <span class="hashtag css">#CSS</span>
+              <span class="hashtag js">#JavaScript</span>
+            </div>
+            <div class="colored-btn-box">
+              <a href="#" class="colored-btn">Live Demo</a>
+              <a href="#" class="colored-btn">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section_text_p1" data-aos="fade-down">Get in Touch</p>
+    <h1 class="title" data-aos="fade-down">Contact Me</h1>
+    <form onsubmit="sendMail(event)" id="contact-form" data-aos="fade-down" data-aos-delay="300">
+      <p class="inquiry">For general inquiries, please contact me directly at: <a href="mailto:sangarajutejaraju@gmail.com" class="mail-color">sangarajutejaraju@gmail.com</a> or through this form:</p>
+      <div class="form-container">
+        <div class="input-group">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="subject" placeholder="Subject" required>
+        </div>
+  
+        <div class="input-group-2">
+          <textarea rows="5" id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="contact-btn">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <footer>
+    <div class="socialIcons">
+      <a href="https://www.GitHub.com/Tejaraju0" data-aos="fade-up" data-aos-delay="250"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/teja-raju/" data-aos="fade-up" data-aos-delay="350"><i class="fa-brands fa-linkedin"></i></a>
+      <img data-aos="fade-up" data-aos-delay="450" src="./assets/trace.svg" onclick="location.href='https://www.leetcode.com/Teja_raju'"/>
+    </div>
+    <div class="footerbottom">
+      <p>Copyright &#169; 2024 Designed by<span class="designer">Teja</span></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
