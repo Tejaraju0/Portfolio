@@ -180,17 +180,31 @@
   }
 
   #profile {
+    padding-top: 12vh;
     height: 83vh;
     margin-bottom: 0;
   }
 
-  #profile .section_text {
-    padding-top: 20px;
+  #about {
+    padding-top: 13vh;
   }
 
   #experience {
-    bottom: -10vh;
+    padding-top: 13vh;
   }
+
+  #skills{
+    padding-top: 13vh;
+  }
+
+  #projects {
+    padding-top: 13vh;
+  }
+
+  #contact {
+    padding-top: 13vh;
+  }
+  
   article {
     font-size: 1rem;
   }
