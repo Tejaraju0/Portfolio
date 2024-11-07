@@ -8,12 +8,11 @@
   }
 
   .nav-links li{ 
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
   #desktop-nav{
     display: none;
   }
@@ -22,7 +21,7 @@
   }
 
   .hamburger-menu {
-    padding: 0 6rem;
+    padding: 0 5rem;
   }
 
   .menu-links {
@@ -32,7 +31,6 @@
   nav {
     height: 7vh;
   }
-
   .timeline {
     margin: 50px auto;
   }
@@ -65,10 +63,29 @@
     left: -14px;
   }
 
-  #profile,
+  .fullname {
+    font-size: 2rem;
+  }
+  .section_pic-container {
+    width: auto;
+    height: 275px;
+    margin: 0 auto 2rem;
+    justify-content: center;
+  }
+
+    #profile,
   .section-container {
     display: block;
   }
+
+  .skill-logo {
+    width: 70px; 
+    height: 70px;
+    transition: transform 0.4s ease; 
+  }
+}
+
+@media screen and (max-width: 1200px) {
 
   .arrow {
     display: none;
@@ -80,17 +97,7 @@
   }
 
   section {
-    margin: 0 5%;
-  }
-
-  .fullname {
-    font-size: 2.5rem;
-  }
-  .section_pic-container {
-    width: auto;
-    height: 275px;
-    margin: 0 auto 2rem;
-    justify-content: center;
+    margin: 0 9%;
   }
 
   .about-containers {
@@ -98,8 +105,8 @@
   }
 
   .skill-logo {
-    width: 80px; 
-    height: 80px;
+    width: 75px; 
+    height: 75px;
     transition: transform 0.4s ease; 
   }
 
@@ -111,6 +118,7 @@
   .skills-container {
     max-width: 800px;
   }
+
 }
 
 @media  screen and (max-width: 768px) {
@@ -156,6 +164,24 @@
     width: 80%;
     padding: 1rem;
   }
+
+  .logo {
+    padding: 0 3rem;
+  }
+
+  .hamburger-menu {
+    padding: 0 4rem;
+  }
+
+  .skill-logo {
+    width: 65px; 
+    height: 65px;
+    transition: transform 0.4s ease; 
+  }
+
+  .fullname {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -163,8 +189,13 @@
     font-size: 0.9rem;
   }
 
+  .hamburger-menu {
+    padding: 0 4rem;
+  }
+
   .logo {
-    padding: 0 2rem;
+    padding: 0 3rem;
+    font-size: 1.5rem;
   }
 
   .menu-links {
@@ -180,9 +211,8 @@
   }
 
   #profile {
-    padding-top: 12vh;
+    padding-top: 17vh;
     height: 83vh;
-    margin-bottom: 0;
   }
 
   #about {
@@ -209,23 +239,19 @@
     font-size: 1rem;
   }
 
-  .logo {
-    font-size: 1.5rem;
-  }
-
   .section_pic-container {
     width: auto;
-    height: 55vw;
+    height: 45vw;
     justify-content: center;
   }
 
   .section_text{
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .section_text_p2 {
     font-size: 1.25rem;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
   }
 
   .title {
@@ -233,7 +259,7 @@
   }
 
   .fullname {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .btn {
@@ -245,8 +271,8 @@
   }
 
   .skill-logo {
-    width: 60px; 
-    height: 60px;
+    width: 55px; 
+    height: 55px;
     transition: transform 0.4s ease; 
   }
 
@@ -257,11 +283,19 @@
 
   .footerbottom {
     padding: 10px;
-   }
+  }
 
-   .footerbottom p {
+  .footerbottom p {
     font-size: 1rem
-   }
+  }
+
+  .project-text p {
+    font-size: 12px;
+  }
+
+  .project-img img {
+    max-width: 250px;
+  }
 }  
 
 
@@ -273,11 +307,12 @@
 
   .logo {
     padding: 0 0;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 
   .hamburger-menu {
-    padding: 0 2rem;
+    padding: 0 0.5rem;
+    padding-right: 2.5rem;
   }
 
   .menu-links {
@@ -285,7 +320,7 @@
   }
 
   .inquiry {
-    font-size: 1rem;
-    padding: 1.5rem;
+    font-size: 0.85rem;
+    padding: 1rem;
   }
 }
